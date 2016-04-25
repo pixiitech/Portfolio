@@ -1,0 +1,75 @@
+
+/* Body, flex direction column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+/* Main Sub-Container, flex direction row (by default) */
+#main {
+  display: flex;
+}
+/* Header and Footer are the same style for now */
+header, footer {
+  background: blue;
+  border: 1px solid white;
+  color: white;
+}
+
+/* footer {
+  width: 100%;
+   position: fixed;
+   bottom: 0;
+} */
+
+/* Section, main section. Fills up space */
+section {
+  border: 1px solid white;
+  background: grey;
+  height: 80vh;
+  flex-grow: 2;
+  color: white;
+}
+/* Nav on the left, using order= hack*/
+nav {
+  display: block;
+  border: 1px solid white;  
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  display: inline block;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+nav a:link {
+  color: white;
+}
+
+nav a:hover {
+  color: #880088;
+}
+
+/* Aside on the right */
+aside {
+  border: 1px solid white;  
+  background: red;
+  color: white;
+  height: 80vh;
+}
+
+/* Social Icons */
+.social-icons {
+  height: 30px;
+  width: 30px;
+}
+
+.profile-pic {
+  height: 100px;
+  width: 122px;
+  float: left;
+}
